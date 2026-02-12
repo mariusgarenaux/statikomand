@@ -226,6 +226,10 @@ class KomandParser:
             The end of the code string, given the rules stated above.
         """
         splitted_code = shlex.split(code)
+        if len(splitted_code) == 0:
+            first_pos = self.positionals[0]
+            return first_pos.do_complete(code)
+
         last_word = splitted_code[-1]
         last_word_rank = len(splitted_code) - 1
         if last_word[0] == "-" and code[-1] != " ":
