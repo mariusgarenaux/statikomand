@@ -234,7 +234,6 @@ class KomandParser:
             this_token = splitted_code[last_word_rank - k]
             if this_token[0] == "-":
                 potential_matches = self.try_complete_flag_value(this_token, last_word)
-                print(f"potential matches : {potential_matches}")
                 if potential_matches is not None:
                     return potential_matches
 
