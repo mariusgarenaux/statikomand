@@ -8,7 +8,7 @@ All CLI parsers interacts with user terminal in order to parse a command (python
 
 This python module provides tools for doing the same job, without any interaction with the user terminal. It just parses a raw string into a structured object.
 
-It also provide a way to declare completion of arguments names and parameters.
+It also provides a way to declare completion of arguments names and parameters.
 
 ## Getting Started
 
